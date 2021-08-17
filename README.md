@@ -5,7 +5,7 @@ First session:
 - tkinter tutorial
 
 to do for next session:
-- gitlab github introduction
+- gitlab github introduction (done)
 - gitlab python introduction
 - python 6h tutorial
 - build interface: include widgets, update layout
