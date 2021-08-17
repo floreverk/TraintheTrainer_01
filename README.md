@@ -9,3 +9,5 @@ to do for next session:
 - gitlab python introduction
 - python 6h tutorial
 - build interface: include widgets, update layout
+
+deadline 01/09
