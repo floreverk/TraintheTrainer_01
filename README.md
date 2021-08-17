@@ -8,3 +8,4 @@ to do for next session:
 - gitlab github introduction
 - gitlab python introduction
 - python 6h tutorial
+- build interface: include widgets, update layout
