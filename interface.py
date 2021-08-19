@@ -1,15 +1,28 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from tkinter import font
+from fpdf import FPDF
 
 def start():
     choice = [var1.get(), var2.get(), var3.get()]
     if tuple(choice) == ('postcard1', '', ''):
-        #create postcard1
+        pdf = FPDF('P', 'mm', 'A5')
+        pdf.add_page()
+        pdf.set_font("Arial", size=15)
+        pdf.cell(200, 10, txt="", ln = 1, align="C")
+        pdf.output("created.pdf")
     elif tuple(choice) == ('', 'postcard2', ''):
-        #create postcard2
+        pdf = FPDF('P', 'mm', 'A5')
+        pdf.add_page()
+        pdf.set_font("Arial", size=15)
+        pdf.cell(200, 10, txt="", ln = 1, align="C")
+        pdf.output("created.pdf")
     elif tuple(choice) == ('', '', 'postcard3'):
-        #create postcard3
+        pdf = FPDF('P', 'mm', 'A5')
+        pdf.add_page()
+        pdf.set_font("Arial", size=15)
+        pdf.cell(200, 10, txt="", ln = 1, align="C")
+        pdf.output("created.pdf")
     else:
         error = Label(text="Please select only one postcard", bg="#fffedd")
         error.grid(row=13, column=1)
